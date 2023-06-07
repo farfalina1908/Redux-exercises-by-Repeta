@@ -24,8 +24,8 @@ export const StatusFilter = () => {
         Active
       </Button>
       <Button
-        selected={filter === statusFilters.complited}
-        onClick={() => handleFilterChange(statusFilters.complited)}
+        selected={filter === statusFilters.completed}
+        onClick={() => handleFilterChange(statusFilters.completed)}
       >
         Completed
       </Button>

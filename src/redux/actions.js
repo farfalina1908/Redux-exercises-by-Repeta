@@ -3,7 +3,7 @@ import { nanoid } from 'nanoid';
 export const addTask = text => {
   return {
     type: 'tasks/addTask',
-    payLoad: {
+    payload: {
       id: nanoid(),
       completed: false,
       text,
@@ -13,7 +13,7 @@ export const addTask = text => {
 
 export const deleteTask = taskId => {
   return {
-    type: 'tasks/deleteTasks',
+    type: 'tasks/deleteTask',
     payload: taskId,
   };
 };
